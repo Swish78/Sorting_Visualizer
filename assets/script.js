@@ -171,7 +171,7 @@ $(document).ready(function() {
         createArray();
     });
 
-    $("#speed-slider").on('output', function() {
+    $("#speed-slider").on('inpt', function() {
         delay = WAITING_TIME * Math.pow(2, MAX_SPEED - $(this).val());
     });
 
