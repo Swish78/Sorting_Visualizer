@@ -190,4 +190,22 @@ $(document).ready(function() {
             }
         }
     });
+    // Dark Mode and Light Mode Toggle
+    let isDarkMode = true;
+
+    function toggleMode() {
+        isDarkMode = !isDarkMode; 
+
+        if (isDarkMode) {
+            $("body").removeClass("light-mode");
+            $("body").addClass("dark-mode");
+        } else {
+            $("body").removeClass("dark-mode");
+            $("body").addClass("light-mode");
+        }
+    }
+
+    $("#mode-toggle").click(function() {
+        toggleMode();
+    });
 });
